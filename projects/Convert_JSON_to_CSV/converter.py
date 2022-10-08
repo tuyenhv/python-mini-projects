@@ -5,6 +5,7 @@ if __name__ == '__main__':
     try:
         with open(input_File, 'r') as f:
             data = json.loads(f.read())
+            print("debug")
 
         output = ','.join([*data[0]])
         for obj in data:
