@@ -4,6 +4,7 @@ input_File = 'input.json'
 if __name__ == '__main__':
     try:
         with open(input_File, 'r') as f:
+            print("debug from local")
             data = json.loads(f.read())
 
         output = ','.join([*data[0]])
