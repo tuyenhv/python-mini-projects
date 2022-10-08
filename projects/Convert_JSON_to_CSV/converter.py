@@ -1,8 +1,9 @@
 import json
 
+input_File = 'input.json'
 if __name__ == '__main__':
     try:
-        with open('input.json', 'r') as f:
+        with open(input_File, 'r') as f:
             data = json.loads(f.read())
 
         output = ','.join([*data[0]])
